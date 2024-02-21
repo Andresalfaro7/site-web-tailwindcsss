@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Alojamiento para vacaciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="flex w-full px-10 py-7">
+        <div class="w-2/12">
+            <img src="img/logotipo_102px.png" alt="">
+        </div>
+        <nav class="w-3/6">
+            <ul class="flex justify-center">
+                <li class="px-3">Estancias</li>
+                <li class="px-3">Experiencias</li>
+                <li class="px-3">Experiencias en linea</li>
+            </ul>
+        </nav>
+        <div class="w-2/6 flex justify-between">
+            <a href="#">Pon tu casa aen Airbnb</a>
+            <i class="fa-solid fa-globe"></i>
+            <div class="border border-stone-500 rounded-full px-4 flex items-center justify-between">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Filtros -->
+    <header class="px-40 border-b-2 pb-8">
+        <div class="border rounded-full border-stone-500 flex">
+            <div class="px-8 py-4 w-1/4">
+                <label for="" class="block">Destino</label>
+                <input type="text" class="outline-none" placeholder="Buscar destinos">
+            </div>
+            <div class="px-8 py-4 w-1/4">
+                <label for="" class="block">Lllegada</label>
+                <input type="date" class="outline-none" placeholder="Agregar fecha">
+            </div>
+            <div class="px-8 py-4 w-1/4">
+                <label for="" class="block">Salida</label>
+                <input type="date" class="outline-none" placeholder="Agregar fecha">
+            </div>
+            <div class="px-8 py-4 flex w-1/4">
+                <div class="w-3/4">
+                    <label for="" class="block w-full">Huespedes</label>
+                    <input type="text" class="outline-none" placeholder="¿Cuantos?">
+                </div>
+                <div class="w-1/4">
+                    <button class="rounded-full bg-red-500 text-white px-5 py-4"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Filtros -->
+    <section class="p-12 flex items-center">
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-house-chimney w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Mini casas</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-water w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Lagos</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-tree w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Parques</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-chess-rook w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Castillos</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-regular fa-object-ungroup w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Diseños</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-mountain-city w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Casas de campo</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-bed w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Habitacioness</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer hover:border-b-2 hover:border-black">
+            <i class="fa-solid fa-umbrella-beach w-full text-2xl"></i>
+            <small class="w-full text-center py-4 font-bold">Playa</small>
+        </div>
+        <button class="border rounded-lg border-stone-500 px-8 py-4 mx-4 flex items-center">
+            <i class="fa-solid fa-sliders"></i> Filtros
+        </button>
+        <div class="border rounded-lg border-stone-500 px-8 py-4">Impuestos</div>
+    </section>
+    <!-- Hospedajes -->
+    <section class="p-4 lg:p-12 flex flex-wrap items-center justify-center w-full">
+        <div class="mx-2 relative w-full md:w-[40%] lg:w-[30%] ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative w-full md:w-[40%] lg:w-[30%] ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative w-full md:w-[40%] lg:w-[30%] ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative w-full md:w-[40%] lg:w-[30%] ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative w-full md:w-[40%] lg:w-[30%] ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative w-full md:w-[40%] lg:w-[30%] ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+    </section>
+    <section class="p-12 flex items-center justify-center">
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+    </section>
+    <section class="p-12 flex items-center justify-center">
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+        <div class="mx-2 relative">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500"></i>
+            <img class="rounded-lg" src="img/place1.jpg" alt="Lugar de playa">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Italia, Porto</h3>
+                <span><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <p class="text-stone-600">lugar vacacinal para disfrutar en pareja</p>
+            <small class="font-bold text-md">$150.00 <span class="font-normal">Noche</span></small>
+        </div>
+    </section>
+    <!-- Buttom -->
+    <div class="fixed bottom-4 right-0 left-0 text-center">
+        <button class="bg-black text-white px-8 py-4 text-lg rounded-full">Ver en el mapa <i class="fa-regular fa-map"></i></button>
+    </div>
+    <script src="js/fontawesome-free-6.5.1/js/all.min.js"></script>
+</body>
+</html>
